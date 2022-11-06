@@ -1,7 +1,6 @@
 import java.util.*;
 import javax.crypto.*;
 import javax.crypto.spec.*;
-import java.util.Base64;
 
 public class DES{
     public static void main(String args[]) throws Exception{
