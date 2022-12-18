@@ -16,9 +16,9 @@ public class Rijndael{
         String key = sc.nextLine();
         byte[] keyData = key.getBytes();
         SecretKeySpec skeySpec = new SecretKeySpec(keyData, "AES");
-        Cipher cipher = Cipher.getInstance("AES/ECB/NoPadding");
-
+        
         // ENCRYPTION
+        Cipher cipher = Cipher.getInstance("AES/ECB/NoPadding");
         cipher.init(Cipher.ENCRYPT_MODE, skeySpec);
         byte[] encrypted = cipher.doFinal(message);
 
